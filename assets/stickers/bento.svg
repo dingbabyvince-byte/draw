@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 缤纷便当盒 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect fill="#ff91b4" x="18" y="38" width="84" height="57" rx="12"/><path fill="#ffd25f" d="M24 38q36-17 72 0v15H24z"/><path fill="#fff3cf" d="M32 62h25v20H32zM63 62h25v20H63z"/>
+    <circle fill="#71c98b" cx="44" cy="72" r="7"/><path fill="#f27f5e" d="M70 76q9-12 18 0-9 10-18 0z"/><circle fill="#fff" stroke="none" cx="45" cy="73" r="2"/><circle fill="#fff" stroke="none" cx="75" cy="73" r="2"/><path fill="none" d="M50 85q5 4 10 0"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <!-- ORIGINAL_ASSET: 魔法门 -->
+  <path d="M10 100 V30 Q35 5 60 30 V100 Z" fill="#b48cff" stroke="#8a5cd6" stroke-width="4"/>
+  <circle cx="48" cy="60" r="6" fill="#ffd45a"/>
+  <path d="M20 40 L50 40" stroke="#d4b8ff" stroke-width="3"/>
+</svg>

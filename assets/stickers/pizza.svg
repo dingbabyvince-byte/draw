@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 快乐披萨 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#e9b36a" d="M18 29q42-15 84 0L64 104q-4 8-8 0z"/><path fill="#ffcf5b" d="M22 30q38-14 76 0l-8 17q-30-10-60 0z"/><g fill="#ef6574"><circle cx="43" cy="36" r="5"/><circle cx="66" cy="34" r="5"/><circle cx="79" cy="43" r="5"/></g>
+    <circle fill="#fff" stroke="none" cx="49" cy="61" r="3"/><circle fill="#fff" stroke="none" cx="69" cy="61" r="3"/><path fill="none" d="M54 72q6 5 12 0"/>
+  </g>
+</svg>

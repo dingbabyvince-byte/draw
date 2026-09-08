@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <!-- ORIGINAL_ASSET: 小球 -->
+  <circle cx="35" cy="35" r="28" fill="#fff" stroke="#90a4ae" stroke-width="3"/>
+  <path d="M35 7 Q50 35 35 63 Q20 35 35 7" fill="none" stroke="#ef5350" stroke-width="3"/>
+  <path d="M8 35 H62" stroke="#42a5f5" stroke-width="3"/>
+</svg>

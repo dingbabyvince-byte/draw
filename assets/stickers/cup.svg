@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩虹小杯子 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#9bdcf0" d="M25 40h66l-7 60q-21 12-52 0z"/><path fill="#fff3c7" d="M25 40q33-12 66 0v12H25z"/><path fill="none" d="M91 56q29-4 21 19-5 13-19 5"/>
+    <circle fill="#fff" stroke="none" cx="48" cy="67" r="3"/><circle fill="#fff" stroke="none" cx="70" cy="67" r="3"/><path fill="none" d="M53 77q6 5 12 0"/>
+  </g>
+</svg>

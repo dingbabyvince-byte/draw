@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 80" width="90" height="80">
+  <!-- ORIGINAL_ASSET: 小猫 -->
+  <ellipse cx="48" cy="50" rx="28" ry="22" fill="#ffcc80" stroke="#e0a050" stroke-width="3"/>
+  <circle cx="48" cy="30" r="18" fill="#ffcc80" stroke="#e0a050" stroke-width="3"/>
+  <path d="M32 18 L28 4 L40 14 Z" fill="#ffcc80" stroke="#e0a050" stroke-width="2"/>
+  <path d="M64 18 L68 4 L56 14 Z" fill="#ffcc80" stroke="#e0a050" stroke-width="2"/>
+  <circle cx="42" cy="28" r="3" fill="#5b3a4a"/><circle cx="54" cy="28" r="3" fill="#5b3a4a"/>
+  <path d="M48 32 L48 38" stroke="#e05a8a" stroke-width="2"/><path d="M70 55 Q82 40 78 30" fill="none" stroke="#e0a050" stroke-width="4"/>
+</svg>

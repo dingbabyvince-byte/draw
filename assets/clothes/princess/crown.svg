@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" width="120" height="70">
+  <!-- ORIGINAL_ASSET: 小皇冠（金色+粉色宝石） -->
+  <path d="M14 54 L24 18 L42 44 L60 12 L78 44 L96 18 L106 54 Z" fill="#ffd45a" stroke="#c79a00" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="24" cy="20" r="6" fill="#ff7eaa"/><circle cx="60" cy="14" r="7" fill="#ff4d8d"/><circle cx="96" cy="20" r="6" fill="#ff7eaa"/>
+  <rect x="14" y="50" width="92" height="13" rx="6" fill="#ffe082" stroke="#c79a00" stroke-width="3"/>
+  <circle cx="60" cy="56" r="4" fill="#ff4d8d"/>
+</svg>

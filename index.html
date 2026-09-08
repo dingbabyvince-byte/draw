@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffcf56" />
+  <title>彩虹小画家</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="kitchen.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="homeView" class="view home-view" aria-label="彩虹小画家首页">
+      <header class="home-header">
+        <div class="brand-mark" aria-hidden="true">🎨</div>
+        <div class="brand-copy">
+          <p class="eyebrow">每天画一点，想象多一点</p>
+          <h1>彩虹小画家</h1>
+        </div>
+        <div class="home-actions">
+          <div class="total-pill" id="homeStarTotal">⭐ 0</div>
+          <div class="sticker-pill" id="homeStickerTotal">🎟️ 贴纸 0</div>
+          <button class="sound-toggle" id="btnSoundHome" type="button" aria-label="关闭声音" aria-pressed="true">🔊<span>声音开</span></button>
+          <button class="icon-btn" id="btnAlbum" type="button" aria-label="打开我的画册">📚<span>画册</span></button>
+        </div>
+      </header>
+
+      <main class="home-main">
+        <section class="welcome-card" aria-label="欢迎">
+          <div class="welcome-copy">
+            <span class="sparkle sparkle-one">✦</span>
+            <span class="sparkle sparkle-two">✦</span>
+            <p class="eyebrow warm">欢迎来到彩虹乐园</p>
+            <h2>今天想画什么呢？</h2>
+            <p>选一张喜欢的图，给它涂上彩色吧！</p>
+            <div class="welcome-actions">
+              <button id="btnContinue" class="primary-btn" type="button">继续画画 <span>→</span></button>
+              <button id="btnPlayground" class="playground-btn" type="button"><span aria-hidden="true">🧸</span>互动乐园</button>
+            </div>
+          </div>
+          <div class="mascot" aria-hidden="true">
+            <div class="mascot-cloud cloud-a"></div>
+            <div class="mascot-cloud cloud-b"></div>
+            <div class="paint-blob"></div>
+            <div class="mascot-face">😊</div>
+            <div class="mascot-brush">🖌️</div>
+            <div class="mascot-star">⭐</div>
+          </div>
+        </section>
+
+        <section class="daily-card" aria-labelledby="dailyTitle">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">小小挑战</p>
+              <h2 id="dailyTitle">今日小任务</h2>
+            </div>
+            <span id="dailyCount" class="progress-chip">0/3</span>
+          </div>
+          <div id="dailyGoals" class="daily-goals"></div>
+        </section>
+
+        <section class="level-section" aria-labelledby="levelTitleHome">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">三座彩虹岛</p>
+              <h2 id="levelTitleHome">选择一座开始</h2>
+            </div>
+            <span class="hint-label">每关都有小惊喜</span>
+          </div>
+          <div id="levelCards" class="level-cards"></div>
+        </section>
+      </main>
+      <footer class="home-footer">离线也能玩 · 作品只保存在这台设备上</footer>
+    </section>
+
+    <section id="gameView" class="view game-view" aria-label="涂色页面" hidden>
+      <header class="game-header">
+        <button class="back-btn" id="btnHome" type="button"><span>‹</span> 首页</button>
+        <div class="game-heading">
+          <div id="levelTitle">第1关 · 小苹果</div>
+          <div id="levelAge">L1 · 3-4岁</div>
+        </div>
+        <div class="game-status">
+          <span id="levelProgress" class="progress-chip">1/2</span>
+          <span id="starTotal" class="total-pill">⭐ 0</span>
+        </div>
+        <button class="sound-toggle" id="btnSoundGame" type="button" aria-label="关闭声音" aria-pressed="true">🔊<span>声音开</span></button>
+        <button class="small-btn hint-hold-btn" id="btnHint" type="button" aria-label="长按查看正确颜色">✨ 按住示范</button>
+        <button class="small-btn" id="btnClear" type="button">↻ 重画</button>
+      </header>
+
+      <main class="game-main">
+        <div id="guideBubble" class="guide-bubble" role="status">先选颜色，再点图画吧！<span></span></div>
+        <div class="paint-toolbar" aria-label="画画方式">
+          <div class="paint-mode-switch" role="group" aria-label="选择画画方式">
+            <button id="btnFillMode" class="paint-mode-btn is-active" type="button" aria-pressed="true">🪣 涂颜色</button>
+            <button id="btnTraceMode" class="paint-mode-btn" type="button" aria-pressed="false">✏️ 描线条</button>
+          </div>
+          <span id="traceProgress" class="trace-progress" hidden>画几笔，让线条醒来吧</span>
+          <button id="btnDoneDrawing" class="done-drawing-btn" type="button" hidden>完成描线 ✓</button>
+        </div>
+        <div id="stage" class="stage-shell"></div>
+        <div class="palette-panel">
+          <div class="palette-heading">
+            <span class="selected-color-wrap"><i id="selectedColorPreview" aria-hidden="true"></i><span id="selectedColor" class="selected-color">我选了彩虹色</span></span>
+            <span class="palette-tip">左右滑动，还有更多颜色</span>
+          </div>
+          <div id="palette" class="palette" aria-label="颜色盘"></div>
+        </div>
+      </main>
+    </section>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <div id="overlay" class="modal-layer" aria-hidden="true">
+    <div class="result-card" role="dialog" aria-modal="true" aria-labelledby="overlayMsg">
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+      <div class="result-emoji" aria-hidden="true">🌈</div>
+      <div id="overlayStars" class="result-stars"></div>
+      <div id="overlayMsg" class="result-title"></div>
+      <div id="overlayEarn" class="result-subtitle"></div>
+      <div id="overlaySticker" class="result-sticker" aria-live="polite"></div>
+      <div class="result-actions">
+        <button class="secondary-btn" id="btnReplay" type="button">再画一次</button>
+        <button class="primary-btn" id="btnNext" type="button">下一张</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="albumModal" class="modal-layer" aria-hidden="true">
+    <div class="album-card" role="dialog" aria-modal="true" aria-labelledby="albumTitle">
+      <button class="close-btn" id="btnCloseAlbum" type="button" aria-label="关闭画册">×</button>
+      <div class="section-heading album-heading">
+        <div>
+          <p class="eyebrow">把喜欢的颜色收起来</p>
+          <h2 id="albumTitle">我的画册</h2>
+        </div>
+        <span id="albumCount" class="progress-chip">0 张</span>
+      </div>
+      <div id="albumGrid" class="album-grid"></div>
+      <section class="sticker-album" aria-labelledby="stickerAlbumTitle">
+        <div class="section-heading sticker-heading">
+          <div>
+            <p class="eyebrow">完成关卡就能收集</p>
+            <h3 id="stickerAlbumTitle">我的贴纸</h3>
+          </div>
+          <span id="stickerCount" class="progress-chip">0 张</span>
+        </div>
+        <div id="stickerGrid" class="sticker-grid"></div>
+      </section>
+    </div>
+  </div>
+
+  <div id="playgroundModal" class="modal-layer playground-modal" aria-hidden="true">
+    <div class="playground-card" role="dialog" aria-modal="true" aria-labelledby="playgroundTitle">
+      <button class="close-btn" id="btnClosePlayground" type="button" aria-label="关闭互动乐园">×</button>
+      <div class="playground-heading">
+        <div>
+          <p class="eyebrow">拖一拖，玩一玩</p>
+          <h2 id="playgroundTitle">互动乐园</h2>
+        </div>
+        <span class="playground-mascot" aria-hidden="true">✦</span>
+      </div>
+      <div class="playground-tabs" role="tablist" aria-label="互动玩法">
+        <button class="playground-tab is-active" id="tabOutfit" type="button" role="tab" aria-selected="true" data-mode="outfit">安静书</button>
+        <button class="playground-tab" id="tabAction" type="button" role="tab" aria-selected="false" data-mode="action">探索世界</button>
+      </div>
+
+      <section id="outfitMode" class="playground-mode" role="tabpanel" aria-labelledby="tabOutfit">
+        <div class="playground-mode-heading">
+          <div><h3>安静书</h3><p>挑一位小伙伴，点一下或拖到发光卡位上试穿。</p></div>
+          <span id="outfitProgress" class="progress-chip">已装扮 0/0</span>
+        </div>
+        <div id="outfitFeedback" class="playground-feedback" role="status" aria-live="polite">先挑一件喜欢的衣服吧！</div>
+        <div class="character-picker-wrap">
+          <div class="paper-label">① 选择角色（可随时切换）</div>
+          <div id="characterPicker" class="character-picker" aria-label="选择小伙伴"></div>
+        </div>
+        <div class="outfit-board quiet-book">
+          <div class="book-page-tab">原创衣橱</div>
+          <div class="outfit-shelf">
+            <div class="paper-label">② 点一下试穿，也可以拖动</div>
+            <div id="outfitItems" class="drag-items" aria-label="可拖动的服装"></div>
+          </div>
+          <div class="dress-up-scene">
+            <!-- ORIGINAL_ASSET: 图层角色舞台，角色/服装均为 SVG -->
+            <div id="dressStage" class="dress-character" aria-label="换装角色">
+              <div id="dressLayers" class="dress-layers"></div>
+              <div id="wearSlots" class="wear-slots" aria-hidden="false"></div>
+            </div>
+          </div>
+          <div class="quiet-book-note">每个卡位都可以替换；搭好一套会收到小鼓励。换装后去「探索世界」一起玩！</div>
+        </div>
+        <div class="playground-actions">
+          <button id="btnPrincessLook" class="secondary-btn" type="button">👑 一键公主装</button>
+          <button id="btnSurpriseLook" class="secondary-btn" type="button">🎲 惊喜搭配</button>
+          <button id="btnResetOutfit" class="secondary-btn" type="button">↻ 重置装扮</button>
+          <button id="btnGoExplore" class="primary-btn" type="button">去探索世界 →</button>
+        </div>
+      </section>
+
+      <section id="actionMode" class="playground-mode" role="tabpanel" aria-labelledby="tabAction" hidden>
+        <div id="kitchenWorld" aria-label="小小厨房：选择或拖动食材，洗菜、做饭、喂小伙伴"></div>
+        <div class="playground-mode-heading">
+          <div><h3>探索世界 · 动作乐园</h3><p>点空地或拖动角色走动，碰到物品就有惊喜。</p></div>
+          <span id="actionProgress" class="progress-chip">发现 0 个动作</span>
+        </div>
+        <div id="actionFeedback" class="playground-feedback" role="status" aria-live="polite">今天想先去哪里玩？</div>
+        <div id="actionMission" class="action-mission" role="status">本场小任务：找到所有会动的东西</div>
+        <div class="explore-toolbar">
+          <div id="scenePicker" class="scene-picker" aria-label="切换场景"></div>
+          <div id="actionCharPicker" class="action-char-picker" aria-label="探索中切换角色"></div>
+        </div>
+        <div class="action-board">
+          <div id="actionScene" class="action-scene" aria-label="探索场景">
+            <div id="sceneBg" class="scene-bg" aria-hidden="true"></div>
+            <div class="maze-road road-one"></div>
+            <div class="maze-road road-two"></div>
+            <div class="maze-road road-three"></div>
+            <div id="actionTargets" class="action-targets" aria-label="互动对象"></div>
+            <div id="actionEggs" class="action-eggs" aria-label="惊喜彩蛋"></div>
+            <div id="actionCharacter" class="action-character layered-actor" data-drag-role="action" tabindex="0" aria-label="可点击或拖动的小伙伴"></div>
+            <div id="actionBuddy" class="action-buddy layered-actor" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="playground-tip">服装、场景、位置和彩蛋进度会保存在这台设备上</div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ORIGINAL_ASSET: 角色/服装/场景数据 -->
+  <script src="assets/data/characters.js"></script>
+  <script src="assets/data/outfits.js"></script>
+  <script src="assets/data/scenes.js"></script>
+  <script src="assets/data/stickers.js"></script>
+  <script src="levels.js"></script>
+  <script src="kids-audio.js"></script>
+  <script src="sticker-lab.js"></script>
+  <script src="kitchen.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

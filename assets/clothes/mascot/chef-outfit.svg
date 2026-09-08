@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150">
+  <!-- ORIGINAL_ASSET: 厨师服 -->
+  <ellipse cx="75" cy="28" rx="38" ry="22" fill="#fff" stroke="#cfd8dc" stroke-width="3"/>
+  <rect x="45" y="45" width="60" height="85" rx="12" fill="#fff" stroke="#cfd8dc" stroke-width="3"/>
+  <circle cx="75" cy="70" r="6" fill="#ff7eaa"/><circle cx="75" cy="95" r="6" fill="#ff7eaa"/>
+</svg>

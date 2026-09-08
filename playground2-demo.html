@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>互动乐园 · 增量1 demo</title>
+  <style>
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body { margin: 0; font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; background: #fff4e8; color: #4e3c66; user-select: none; -webkit-user-select: none; }
+    .pg-wrap { max-width: 1000px; margin: 0 auto; padding: 14px; }
+    h1 { font-size: clamp(18px, 3vw, 26px); margin: 0 0 12px; }
+    .pg-board { position: relative; }
+    .pg-stage { position: relative; width: 100%; aspect-ratio: 16 / 10; border-radius: 22px; overflow: hidden; border: 5px solid #fff; box-shadow: 0 12px 30px rgba(91,65,125,.18); background-size: cover; background-position: center; touch-action: none; cursor: pointer; }
+    .pg-objects { position: absolute; inset: 0; }
+    .pg-obj, .pg-egg { position: absolute; transform: translate(-50%, -50%); width: clamp(46px, 9vmin, 76px); text-align: center; cursor: pointer; transition: transform .18s ease; }
+    .pg-obj:hover, .pg-egg:hover { transform: translate(-50%, -50%) scale(1.08); }
+    .pg-obj img, .pg-egg img { width: 100%; display: block; filter: drop-shadow(0 4px 3px rgba(0,0,0,.18)); }
+    .pg-obj span, .pg-egg span { display: block; font-size: 11px; font-weight: 800; color: #5b4673; background: rgba(255,255,255,.78); border-radius: 999px; margin-top: 2px; padding: 1px 6px; }
+    .pg-obj.is-found img { filter: grayscale(.5) opacity(.6); }
+    .pg-obj.is-fled { opacity: 0; transform: translate(-50%, -50%) scale(.4) rotate(20deg); transition: opacity .4s, transform .4s; pointer-events: none; }
+    .pg-egg { opacity: .85; }
+    .pg-egg.is-found { display: none; }
+    .pg-char { position: absolute; transform: translate(-50%, -100%); cursor: grab; touch-action: none; transition: left .42s linear, top .42s linear; filter: drop-shadow(0 6px 4px rgba(0,0,0,.18)); }
+    .pg-char:active { cursor: grabbing; }
+    .pg-layer-base { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+    .pg-layer-clothes { position: absolute; transform: translate(-50%, -50%); height: auto; object-fit: contain; pointer-events: none; }
+    .pg-fb { min-height: 30px; margin: 10px 0 0; text-align: center; font-size: 15px; font-weight: 800; color: #8a7893; transition: opacity .2s; opacity: 0; }
+    .pg-fb.success { color: #438363; opacity: 1; animation: fbpop .25s ease-out; }
+    .pg-fb.gentle { color: #9a6b4a; opacity: 1; animation: fbpop .25s ease-out; }
+    @keyframes fbpop { from { transform: scale(.96); } to { transform: scale(1); } }
+    .pg-side { margin-top: 14px; }
+    .pg-switch { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+    .pg-char-btn { display: flex; align-items: center; gap: 6px; padding: 6px 10px 6px 6px; border: 3px solid #fff; border-radius: 16px; background: #fff; color: #665272; font-size: 13px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 0 #ead9e7; }
+    .pg-char-btn img { width: 38px; height: 38px; object-fit: contain; }
+    .pg-char-btn.on { border-color: #f3acbf; background: #fff0f6; box-shadow: 0 4px 0 #e994b0, 0 0 0 3px #ffd85c; }
+    .pg-panel-title { font-size: 13px; font-weight: 800; color: #9d7487; margin-bottom: 8px; }
+    .pg-dress-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pg-dress-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 76px; padding: 8px 4px; border: 3px solid #fff; border-radius: 16px; background: #fff; box-shadow: 0 4px 0 #ead9e7; cursor: pointer; }
+    .pg-dress-btn img { width: 48px; height: 76px; object-fit: contain; }
+    .pg-dress-btn span { font-size: 11px; font-weight: 800; color: #665272; }
+    .pg-dress-btn.on { border-color: #9ee5c0; background: #f0fff6; box-shadow: 0 4px 0 #b9e5ce; }
+    .pg-dress-btn.on::after { content: "✓"; color: #4ca776; font-size: 14px; }
+    .pg-reset { margin-top: 14px; padding: 10px 18px; border: 0; border-radius: 16px; background: #8065e8; color: #fff; font-size: 15px; font-weight: 800; box-shadow: 0 5px 0 #6148c5; cursor: pointer; }
+    .pg-tip { margin: 12px 0 4px; font-size: 12px; color: #a18cae; line-height: 1.6; }
+    @media (max-width: 640px) { .pg-stage { aspect-ratio: 4 / 5; } .pg-char-btn span { font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <div class="pg-wrap">
+    <h1>🌈 彩虹小画家 · 互动乐园（增量1 demo）</h1>
+    <div class="pg-board">
+      <div id="pg-stage" class="pg-stage">
+        <div id="pg-objects" class="pg-objects"></div>
+        <div id="pg-char" class="pg-char"></div>
+      </div>
+      <div id="pg-feedback" class="pg-fb"></div>
+    </div>
+    <div class="pg-side">
+      <div id="pg-switch" class="pg-switch"></div>
+      <div id="pg-dress" class="pg-dress"></div>
+      <button id="pg-reset" class="pg-reset">重置造型</button>
+      <p class="pg-tip">点场景空白处 = 角色走过去 · 直接拖角色 = 自由走 · 点物品 = 走过去触发（滑倒/开宝箱/弹琴/下水/魔法门）· 点衣服 = 穿上/脱下。服装/场景/位置/彩蛋会自动保存（需 http 才跨会话留存）。</p>
+    </div>
+  </div>
+  <script src="assets/data/characters.js"></script>
+  <script src="assets/data/outfits.js"></script>
+  <script src="assets/data/scenes.js"></script>
+  <script src="playground2.js"></script>
+  <script>
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { window.Playground2 && window.Playground2.init(); });
+    else window.Playground2 && window.Playground2.init();
+  </script>
+</body>
+</html>

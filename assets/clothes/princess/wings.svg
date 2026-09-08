@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" width="180" height="140">
+  <!-- ORIGINAL_ASSET: 蝴蝶翅膀（粉色半透明） -->
+  <path d="M90 70 Q40 18 18 70 Q16 122 60 112 Q82 102 90 70 Z" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4" opacity="0.88"/>
+  <path d="M90 70 Q140 18 162 70 Q164 122 120 112 Q98 102 90 70 Z" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4" opacity="0.88"/>
+  <circle cx="46" cy="72" r="9" fill="#fff" opacity="0.7"/><circle cx="134" cy="72" r="9" fill="#fff" opacity="0.7"/>
+  <circle cx="40" cy="98" r="6" fill="#ff4d8d" opacity="0.6"/><circle cx="140" cy="98" r="6" fill="#ff4d8d" opacity="0.6"/>
+</svg>

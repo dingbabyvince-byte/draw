@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩虹冰棒 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#ff7fa6" d="M30 22h60v63q0 20-30 20T30 85z"/><path fill="#ffe06a" d="M30 46h60v18H30z"/><path fill="#8edcb0" d="M30 64h60v18H30z"/><path fill="#d99961" d="M52 102h16v13H52z"/>
+    <circle fill="#fff" stroke="none" cx="48" cy="37" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="37" r="3"/><path fill="none" d="M53 49q7 6 14 0"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 草莓果酱 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#f46b79" d="M27 42h66v58q-33 13-66 0z"/><path fill="#9bdcf0" d="M25 29h70v19H25z"/><path fill="#fff1dc" d="M35 58h50v25H35z"/><path fill="#f8a7c3" d="M52 75q8-18 16 0-8 11-16 0z"/>
+    <circle fill="#fff" stroke="none" cx="48" cy="91" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="91" r="3"/><path fill="none" d="M53 96q7 5 14 0"/>
+  </g>
+</svg>

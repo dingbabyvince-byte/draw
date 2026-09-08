@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 小叉子 -->
+  <g fill="#b9d9e5" stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 15v34q0 16 13 16v39h12V65q13 0 13-16V15M30 15v24m13-24v24m12-24v24"/>
+    <circle fill="#fff" stroke="none" cx="36" cy="49" r="3"/><circle fill="#fff" stroke="none" cx="57" cy="49" r="3"/><path fill="none" d="M40 57q5 4 10 0"/>
+  </g>
+</svg>

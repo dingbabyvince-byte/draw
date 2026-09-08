@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 小小打蛋器 -->
+  <g fill="none" stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#a995f4" d="M50 16h20v20H50z"/><path d="M60 36v18q-30 5-27 27 3 15 15 15 12 0 12-17V54q0 25 12 25 12 0 15-15 3-22-27-28z"/>
+    <path fill="#fff" d="M52 28h16"/><circle fill="#fff" stroke="none" cx="47" cy="76" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="68" r="3"/><path d="M52 85q6 5 12 0"/>
+  </g>
+</svg>

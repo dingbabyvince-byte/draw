@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 180" width="140" height="180">
+  <!-- ORIGINAL_ASSET: 粉色公主裙（覆盖躯干到膝盖的蓬蓬裙） -->
+  <path d="M48 16 Q70 6 92 16 L96 70 Q70 80 44 70 Z" fill="#ff6f9c" stroke="#d8336a" stroke-width="4"/>
+  <rect x="44" y="64" width="52" height="13" rx="6" fill="#ffd45a" stroke="#c79a00" stroke-width="3"/>
+  <path d="M40 76 Q70 68 100 76 L126 170 Q70 180 14 170 Z" fill="#ff9ec4" stroke="#e85a8a" stroke-width="4"/>
+  <path d="M30 118 Q70 110 110 118" fill="none" stroke="#fff" stroke-width="4" opacity="0.85"/>
+  <path d="M22 150 Q70 142 118 150" fill="none" stroke="#fff" stroke-width="4" opacity="0.85"/>
+  <path d="M14 170 Q40 166 70 170 Q100 174 126 170" fill="none" stroke="#fff" stroke-width="4" opacity="0.85"/>
+  <path d="M70 38 C67 33 60 33 60 39 C60 44 70 51 70 51 C70 51 80 44 80 39 C80 33 73 33 70 38 Z" fill="#ff4d8d"/>
+  <circle cx="55" cy="132" r="5" fill="#fff" opacity="0.75"/><circle cx="85" cy="152" r="5" fill="#fff" opacity="0.75"/><circle cx="70" cy="100" r="4" fill="#fff" opacity="0.75"/>
+</svg>

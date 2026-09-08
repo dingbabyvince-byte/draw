@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩虹冰淇淋 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#eeb36f" d="M38 64h44l-8 43H46z"/><path fill="none" d="M47 75l25 25m-21-28 24 24m-15-25 18 18"/>
+    <circle fill="#ff8bb1" cx="60" cy="48" r="25"/><circle fill="#ffd966" cx="43" cy="57" r="19"/><circle fill="#a995f4" cx="77" cy="57" r="19"/><path fill="none" d="M45 48q15-20 30 0"/>
+    <circle fill="#fff" stroke="none" cx="51" cy="54" r="3"/><circle fill="#fff" stroke="none" cx="70" cy="54" r="3"/><path fill="none" d="M56 64q5 5 10 0"/>
+  </g>
+</svg>

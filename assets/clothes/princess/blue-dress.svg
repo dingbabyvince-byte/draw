@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 180" width="140" height="180">
+  <!-- ORIGINAL_ASSET: 蓝色蓬蓬裙 -->
+  <path d="M52 18 Q70 6 88 18 L98 64 Q130 150 70 172 Q10 150 42 64 Z" fill="#7ad7ff" stroke="#3aa8d8" stroke-width="4"/>
+  <ellipse cx="70" cy="120" rx="48" ry="28" fill="#a8e8ff" opacity="0.55"/>
+  <circle cx="55" cy="90" r="5" fill="#fff"/><circle cx="85" cy="100" r="5" fill="#fff"/>
+</svg>

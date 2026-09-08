@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ORIGINAL_ASSET: 海边场景 -->
+  <rect width="800" height="500" fill="#87d6ff"/>
+  <circle cx="680" cy="90" r="48" fill="#ffd45a"/>
+  <rect y="260" width="800" height="120" fill="#5ec8f0"/>
+  <rect y="360" width="800" height="140" fill="#f5e0a8"/>
+  <ellipse cx="180" cy="390" rx="70" ry="28" fill="#e8c878"/>
+  <path d="M520 360 L560 280 L600 360 Z" fill="#8d6e63"/><ellipse cx="560" cy="270" rx="55" ry="30" fill="#66bb6a"/>
+  <circle cx="120" cy="100" r="30" fill="#fff" opacity="0.8"/><circle cx="160" cy="95" r="36" fill="#fff" opacity="0.75"/>
+</svg>

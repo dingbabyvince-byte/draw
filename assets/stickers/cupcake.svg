@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 小纸杯蛋糕 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#f3a46b" d="M27 58h66l-8 47H35z"/><path fill="#ff8fb0" d="M23 59q0-28 18-28 8-16 19 0 11-17 19 0 18 0 18 28z"/><circle fill="#ffd65a" cx="60" cy="23" r="8"/>
+    <circle fill="#fff" stroke="none" cx="48" cy="65" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="65" r="3"/><path fill="none" d="M53 75q7 6 14 0"/>
+  </g>
+</svg>

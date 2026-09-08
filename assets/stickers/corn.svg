@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 开心玉米 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#ffd65a" d="M38 25q22-13 44 0v66q-22 18-44 0z"/><path fill="#71c986" d="M38 30Q20 26 22 11q16 4 28 18Q61 4 76 10q1 16-11 24z"/>
+    <g fill="#f3af44" stroke="none"><circle cx="48" cy="42" r="3"/><circle cx="61" cy="41" r="3"/><circle cx="74" cy="44" r="3"/><circle cx="48" cy="56" r="3"/><circle cx="61" cy="56" r="3"/><circle cx="74" cy="58" r="3"/><circle cx="50" cy="71" r="3"/><circle cx="64" cy="72" r="3"/></g>
+    <circle fill="#fff" stroke="none" cx="53" cy="83" r="3"/><circle fill="#fff" stroke="none" cx="69" cy="83" r="3"/><path fill="none" d="M57 92q5 5 10 0"/>
+  </g>
+</svg>

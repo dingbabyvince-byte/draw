@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 小勺子 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse fill="#ffd76b" cx="42" cy="32" rx="23" ry="17"/><path fill="#ffd76b" d="M53 44l19 58q2 9 9 6 7-3 3-11L61 40z"/>
+    <circle fill="#fff" stroke="none" cx="36" cy="30" r="3"/><circle fill="#fff" stroke="none" cx="49" cy="30" r="3"/><path fill="none" d="M39 39q5 4 10 0"/>
+  </g>
+</svg>

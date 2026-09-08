@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 140" width="150" height="140">
+  <!-- ORIGINAL_ASSET: 萌宠蓬蓬裙 -->
+  <path d="M40 20 Q75 8 110 20 L130 110 Q75 130 20 110 Z" fill="#ff9bbf" stroke="#e05a8a" stroke-width="4"/>
+  <ellipse cx="75" cy="80" rx="45" ry="22" fill="#ffd1e6" opacity="0.6"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 三角饭团 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#fff8e8" d="M60 18l45 82H15z"/><path fill="#75c79a" d="M38 68h44v27H38z"/><circle fill="#fff" stroke="none" cx="48" cy="57" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="57" r="3"/><path fill="none" d="M53 69q7 6 14 0"/>
+  </g>
+</svg>

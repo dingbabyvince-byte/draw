@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ORIGINAL_ASSET: 客厅场景 -->
+  <rect width="800" height="500" fill="#ede7f6"/>
+  <rect y="360" width="800" height="140" fill="#d7ccc8"/>
+  <rect x="100" y="220" width="280" height="140" rx="18" fill="#ce93d8" stroke="#ab47bc" stroke-width="4"/>
+  <rect x="120" y="200" width="80" height="40" rx="10" fill="#ce93d8"/><rect x="280" y="200" width="80" height="40" rx="10" fill="#ce93d8"/>
+  <rect x="480" y="180" width="220" height="160" rx="8" fill="#90caf9" stroke="#64b5f6" stroke-width="4"/>
+  <circle cx="590" cy="250" r="40" fill="#fff59d"/><rect x="40" y="80" width="120" height="90" rx="8" fill="#fff" stroke="#b39ddb" stroke-width="3"/>
+  <rect x="0" y="0" width="800" height="40" fill="#b39ddb"/>
+</svg>

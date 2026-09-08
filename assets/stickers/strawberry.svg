@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 笑脸草莓 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#f65d78" d="M24 43q36-18 72 0 0 49-36 62Q24 92 24 43z"/>
+    <path fill="#6bcf86" d="M60 43q-9-17-27-14 10-15 27-5 17-10 27 5-18-3-27 14z"/>
+    <g fill="#ffd56b" stroke="none"><ellipse cx="42" cy="57" rx="2.5" ry="4"/><ellipse cx="60" cy="54" rx="2.5" ry="4"/><ellipse cx="78" cy="58" rx="2.5" ry="4"/><ellipse cx="51" cy="75" rx="2.5" ry="4"/><ellipse cx="70" cy="77" rx="2.5" ry="4"/><ellipse cx="60" cy="94" rx="2.5" ry="4"/></g>
+    <circle fill="#fff" stroke="none" cx="48" cy="69" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="69" r="3"/><path fill="none" d="M53 81q7 6 14 0"/>
+  </g>
+</svg>

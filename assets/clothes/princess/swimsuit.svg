@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="120" height="160">
+  <!-- ORIGINAL_ASSET: 泳装 -->
+  <path d="M40 30 Q60 18 80 30 L85 70 Q90 110 60 130 Q30 110 35 70 Z" fill="#7ad7ff" stroke="#3aa8d8" stroke-width="4"/>
+  <path d="M38 55 H82" stroke="#fff" stroke-width="5"/>
+  <circle cx="50" cy="80" r="4" fill="#fff"/><circle cx="70" cy="90" r="4" fill="#fff"/>
+</svg>

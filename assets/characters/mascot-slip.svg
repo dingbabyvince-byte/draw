@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- ORIGINAL_ASSET: 粉心星宝 slip -->
+  <g transform="rotate(22 100 110)">
+    <line x1="100" y1="40" x2="100" y2="22" stroke="#ff7eaa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M100 8 L106 20 L118 22 L109 30 L112 42 L100 35 L88 42 L91 30 L82 22 L94 20 Z" fill="#ffd45a" stroke="#e8a900" stroke-width="3"/>
+    <path d="M58 60 L52 36 L74 52 Z" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4"/>
+    <path d="M142 60 L148 36 L126 52 Z" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4"/>
+    <ellipse cx="100" cy="118" rx="64" ry="60" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4"/>
+    <ellipse cx="60" cy="170" rx="16" ry="14" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4" transform="rotate(-20 60 170)"/><ellipse cx="140" cy="170" rx="16" ry="14" fill="#ffd1e6" stroke="#ff7eaa" stroke-width="4" transform="rotate(20 140 170)"/><circle cx="82" cy="108" r="7" fill="#5b3a4a"/><circle cx="118" cy="108" r="7" fill="#5b3a4a"/><path d="M88 140 Q100 130 112 140" fill="none" stroke="#c44e6a" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="74" cy="126" r="7" fill="#ff9bbf" opacity="0.6"/>
+    <circle cx="126" cy="126" r="7" fill="#ff9bbf" opacity="0.6"/>
+  </g>
+</svg>

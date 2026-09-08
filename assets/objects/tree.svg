@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 120" width="90" height="120">
+  <!-- ORIGINAL_ASSET: 大树 -->
+  <rect x="38" y="70" width="14" height="42" rx="4" fill="#8d6e63"/>
+  <circle cx="45" cy="50" r="36" fill="#66bb6a" stroke="#43a047" stroke-width="3"/>
+  <circle cx="28" cy="42" r="16" fill="#81c784"/><circle cx="60" cy="38" r="18" fill="#81c784"/>
+</svg>

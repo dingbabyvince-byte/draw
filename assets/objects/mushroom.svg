@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <!-- ORIGINAL_ASSET: 小蘑菇 -->
+  <rect x="28" y="36" width="14" height="26" rx="4" fill="#fff3e0" stroke="#e0c8a0" stroke-width="2"/>
+  <path d="M12 40 Q35 8 58 40 Z" fill="#ef5350" stroke="#c62828" stroke-width="3"/>
+  <circle cx="28" cy="28" r="4" fill="#fff"/><circle cx="42" cy="22" r="5" fill="#fff"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩色擀面杖 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#f2b85f" d="M25 50h70v20H25z"/><path fill="#ff91b4" d="M15 45h13v30H15zM92 45h13v30H92z"/><path fill="none" d="M43 50v20m17-20v20m17-20v20"/>
+    <circle fill="#fff" stroke="none" cx="45" cy="59" r="2.5"/><circle fill="#fff" stroke="none" cx="73" cy="59" r="2.5"/><path fill="none" d="M51 66q6 5 12 0"/>
+  </g>
+</svg>

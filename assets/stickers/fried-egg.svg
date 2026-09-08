@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 太阳煎蛋 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#fffdf0" d="M18 65q-2-22 17-26 9-22 30-8 19-11 29 7 22 5 12 25 6 23-18 25-18 17-35 3-22 12-29-8-20-2-6-18z"/><circle fill="#ffcf4f" cx="61" cy="65" r="22"/>
+    <circle fill="#fff" stroke="none" cx="54" cy="62" r="3"/><circle fill="#fff" stroke="none" cx="68" cy="62" r="3"/><path fill="none" d="M57 73q5 4 10 0"/>
+  </g>
+</svg>

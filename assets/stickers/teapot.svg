@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩虹茶壶 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#ff9db9" d="M28 53q0-25 32-25t32 25v32q-5 18-32 18T28 85z"/><path fill="#ffd05e" d="M42 31q18-12 36 0v-9q-18-10-36 0z"/><path fill="none" d="M92 56q28-2 17 23-5 10-17 2M28 56Q5 52 10 78q3 12 18 5"/>
+    <circle fill="#fff" stroke="none" cx="49" cy="65" r="3"/><circle fill="#fff" stroke="none" cx="71" cy="65" r="3"/><path fill="none" d="M54 75q6 5 12 0"/>
+  </g>
+</svg>

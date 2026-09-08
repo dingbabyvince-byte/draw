@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ORIGINAL_ASSET: 泳池场景 -->
+  <rect width="800" height="500" fill="#b8ecff"/>
+  <rect y="280" width="800" height="220" fill="#5ec8f0"/>
+  <ellipse cx="400" cy="360" rx="280" ry="90" fill="#7ad7ff"/>
+  <rect x="120" y="250" width="560" height="28" rx="8" fill="#fff" opacity="0.7"/>
+  <circle cx="120" cy="80" r="40" fill="#ffd45a"/><circle cx="200" cy="70" r="28" fill="#fff" opacity="0.85"/><circle cx="250" cy="80" r="34" fill="#fff" opacity="0.75"/>
+  <rect x="40" y="300" width="60" height="120" fill="#8bc34a"/><rect x="700" y="310" width="50" height="110" fill="#8bc34a"/>
+</svg>

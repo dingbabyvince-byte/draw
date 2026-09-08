@@ -1,0 +1,152 @@
+/* The play area communicates through pictures, motion and accessible labels. */
+.playground-card.kitchen-active { width: min(1050px, 100%); padding: 14px; background: #fff9ed; }
+.kitchen-active > .playground-heading { display: none; }
+.kitchen-active > .playground-tabs { justify-content: flex-start; padding-right: 50px; margin: 0 0 10px; }
+.kitchen-active > .playground-tabs button { min-width: 64px; min-height: 44px; font-size: 25px; }
+.kitchen-active #actionMode > :not(#kitchenWorld) { display: none; }
+.kitchen-room { position: relative; overflow: hidden; isolation: isolate; height: 610px; border: 5px solid #fff; border-radius: 27px; background: repeating-linear-gradient(0deg, transparent 0 53px, #fff7 54px 56px), repeating-linear-gradient(90deg, #e3f2e7 0 69px, #fff9 70px 72px); box-shadow: 0 5px 0 #e1d3b9; }
+.kitchen-room button { cursor: pointer; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+.kitchen-room button:focus-visible { outline: 4px solid #9564de; outline-offset: 4px; }
+.kitchen-window { position: absolute; top: 20px; left: 7%; width: 165px; height: 127px; border: 10px solid #fff9eb; border-radius: 65px 65px 12px 12px; background: linear-gradient(#b9e8f5, #edfbff); box-shadow: 0 5px 0 #b6d8cc; overflow: hidden; }
+.kitchen-window::after { content: ''; position: absolute; background: #fff9eb; width: 7px; height: 100%; left: 50%; }
+.kitchen-window span { position: absolute; top: 12px; left: 12px; font-size: 40px; animation: kitchenSun 9s ease-in-out infinite; }
+.kitchen-window i { position: absolute; width: 62px; height: 20px; background: white; border-radius: 50%; right: -6px; bottom: 23px; animation: kitchenCloud 7s ease-in-out infinite alternate; }
+.kitchen-window i + i { right: 59px; bottom: 10px; animation-delay: -4s; }
+.kitchen-bunting { position: absolute; top: -18px; left: 33%; color: #f5b399; letter-spacing: 12px; font-size: 53px; white-space: nowrap; transform: rotate(3deg); }
+.kitchen-tools { position: absolute; left: 40%; top: 57px; display: flex; gap: 25px; border-top: 8px solid #dab492; }
+.hanging-tool { position: relative; width: 52px; height: 69px; padding: 7px; border: 0; background: transparent; font-size: 37px; transform-origin: 50% 0; }
+.hanging-tool::before { content: ''; position: absolute; width: 4px; height: 15px; background: #ad9279; left: 50%; top: 0; }
+.hanging-tool img { width: 100%; height: 100%; }
+.kitchen-topbar { position: absolute; top: 12px; right: 12px; display: flex; gap: 7px; }
+.kitchen-icon { width: 44px; height: 44px; border: 2px solid #fff; border-radius: 50%; background: #fff9ed; color: #997751; font-size: 25px; box-shadow: 0 3px 0 #d6c7b3; }
+.kitchen-counter { position: absolute; top: 162px; left: 0; right: 0; height: 178px; display: grid; grid-template-columns: .8fr 1fr 1fr .85fr; align-items: end; gap: 20px; padding: 0 28px 20px; border-bottom: 18px solid #c89774; background: linear-gradient(transparent 0 78%, #f5d8ab 78%); }
+.kitchen-counter::after { content: ''; position: absolute; inset: auto 0 -20px; height: 6px; background: #ab775f; z-index: -1; }
+.cook-station { position: relative; height: 156px; border-radius: 25px; transition: background .2s, box-shadow .2s; }
+.recipe-bubble { position: absolute; left: 50%; top: -25px; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; gap: 7px; min-width: 88px; padding: 5px 10px; border: 3px solid white; border-radius: 18px; background: #fff9ed; font-size: 24px; box-shadow: 0 3px 0 #d6dfce; white-space: nowrap; }
+.recipe-bubble i { font-size: 13px; color: #bbad95; font-style: normal; }
+.appliance { position: relative; display: block; width: 100%; height: 132px; background: transparent; border: 0; padding: 0; }
+.appliance-body { position: absolute; inset: 40px 10% 5px; border: 5px solid #cf785b; border-radius: 14px 14px 42px 42px; background: linear-gradient(110deg, #ffba8e, #f49c78); box-shadow: inset 0 6px 0 #ffd9a3, 0 7px 0 #8a7d79; }
+.station-pot .appliance-body::before,.station-pot .appliance-body::after { content: ''; position: absolute; top: 10px; width: 21px; height: 20px; border: 6px solid #cf785b; border-radius: 9px; left: -23px; }
+.station-pot .appliance-body::after { left: auto; right: -23px; }
+.station-oven .appliance-body { inset: 22px 2% 0; border-color: #85aaa8; border-radius: 19px; background: #a9d1ce; box-shadow: inset 0 10px 0 #cdeae4, 0 7px 0 #679894; }
+.station-oven .appliance-body::before { content: ''; position: absolute; inset: 24px 12px 13px; border: 5px solid #fdf4df; border-radius: 13px; background: #6c797f; }
+.station-oven .appliance-body::after { content: '● ●'; position: absolute; top: 0; right: 8px; color: #fff9ed; font-size: 12px; letter-spacing: 5px; }
+.station-blender .appliance-body { inset: 5px 21% 22px; border-radius: 9px 9px 22px 22px; border: 5px solid #a6c2cf; background: linear-gradient(100deg,#ffffffb0,#c7e8f4b0); box-shadow: 0 -6px 0 #eab0c6, 0 26px 0 5px #e8a5bf; }
+.station-blender .appliance-body::after { content: ''; position: absolute; right: -23px; top: 12px; width: 20px; height: 46px; border: 5px solid #a6c2cf; border-radius: 0 15px 15px 0; }
+.food-inside { position: absolute; left: 15%; right: 15%; top: 48px; font-size: 28px; letter-spacing: -8px; }
+.appliance-face { position: absolute; bottom: 15px; left: 35%; right: 35%; color: #855c4d; font-size: 25px; line-height: 1; }
+.station-oven .appliance-face { bottom: 20px; color: #fff1bc; }
+.station-blender .appliance-face { bottom: -1px; font-size: 21px; }
+.ingredient-slots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+.ingredient-slots span { width: 25px; height: 25px; border: 2px solid #fff5dc; border-radius: 50%; background: #d0ac86; color: #fff6; text-align: center; font-size: 17px; }
+.kitchen-sink { position: relative; height: 130px; border-radius: 20px; }
+.sink-tap { position: absolute; inset: 0 10% auto; z-index: 3; width: 80%; background: transparent; border: 0; font-size: 57px; }
+.sink-bowl { position: absolute; inset: auto 0 0; height: 48px; border: 6px solid #c5d5d8; border-radius: 50%; background: #8fbdcd; box-shadow: inset 0 9px 0 #6f9ea9; }
+.sink-food { position: absolute; bottom: 3px; left: 35%; font-size: 32px; }
+.water-stream { position: absolute; left: 51%; top: 49px; bottom: 16px; width: 13px; background: repeating-linear-gradient(0deg,#d3f8ff 0 7px,#77cde9 8px 14px); opacity: 0; border-radius: 10px; }
+.washing .water-stream { opacity: .9; animation: kitchenWater .4s linear infinite; }
+.washing .sink-food { animation: kitchenStir .5s ease-in-out infinite alternate; }
+.can-drop { background: #fff7ba77; box-shadow: 0 0 0 3px #fff2b5; }
+.drag-over { background: #fff2b5cc; box-shadow: 0 0 0 5px #a6c998; }
+.kitchen-cabinets { position: absolute; top: 340px; left: 0; right: 0; height: 97px; display: flex; gap: 10px; padding: 8px 15px; background: #b9d4bd; border-bottom: 10px solid #8baa92; }
+.kitchen-cabinets i { position: relative; flex: 1; border: 4px solid #8db69d; border-radius: 9px; background: #cbe1cb; }
+.kitchen-cabinets i::after { content: ''; position: absolute; top: 10px; left: 45%; width: 23px; height: 7px; border-radius: 7px; background: #fbefc5; }
+.kitchen-serving { position: absolute; top: 377px; left: 0; right: 0; height: 139px; display: flex; gap: 12px; align-items: end; padding: 0 25px 8px; background: linear-gradient(transparent 58%,#f9e9c9 58% 86%,#dfbd92 86% 91%,transparent 91%); }
+.kitchen-friend { position: relative; z-index: 1; flex: 0 0 90px; height: 127px; border: 0; background: transparent; }
+.friend-face { position: absolute; bottom: 18px; left: 5px; font-size: 69px; }
+.friend-hat { position: absolute; top: -4px; left: 25px; font-size: 35px; z-index: 1; }
+.friend-heart { position: absolute; top: 33px; right: -8px; color: #e78596; font-size: 24px; animation: kitchenHeart 2s ease-in-out infinite; }
+.serving-plates { display: flex; align-items: end; gap: 12px; flex: 1; padding-bottom: 7px; min-width: 0; }
+.served-dish { width: 75px; height: 64px; border: 0; border-radius: 50%; background: radial-gradient(ellipse at 50% 75%,#e1d2c5 0 35%,white 37% 60%,transparent 61%); font-size: 47px; }
+.kitchen-prizes { display: flex; align-self: center; gap: 0; flex-wrap: wrap; width: 92px; }
+.kitchen-prizes img { width: 43px; height: 43px; filter: drop-shadow(0 2px 0 white); animation: kitchenPop .65s ease-out; }
+.food-shelf { position: absolute; bottom: 0; left: 0; right: 0; height: 90px; display: flex; justify-content: space-evenly; align-items: center; gap: 10px; padding: 10px 22px; background: #fff5e3; border-top: 4px solid #f5dfbc; }
+.kitchen-food { position: relative; flex: 1; max-width: 93px; height: 67px; border: 3px solid #f0ddc6; border-radius: 19px; background: white; box-shadow: 0 4px 0 #dec5a7; touch-action: none !important; transition: background .2s, border-color .2s; user-select: none; }
+.kitchen-food img { width: 100%; height: 100%; pointer-events: none; }
+.kitchen-food.selected { border-color: #bd9be5; background: #f0e6ff; transform: translateY(-5px); }
+.wash-check { display: none; position: absolute; right: -6px; bottom: -4px; font-size: 18px; }
+.is-washed .wash-check { display: block; }
+.food-drag-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%,-70%) rotate(-10deg); font-size: 68px; filter: drop-shadow(0 10px 8px #80583944); }
+.kitchen-particles { position: absolute; inset: 0; pointer-events: none; z-index: 10; }
+.kitchen-particle { position: absolute; font-size: 27px; animation: kitchenParticle 1s ease-out forwards; }
+.steam { position: absolute; left: 28%; right: 22%; top: 16px; display: flex; justify-content: space-between; opacity: 0; }
+.steam i { width: 9px; height: 26px; background: #ffffffe0; border-radius: 50%; animation: kitchenSteam 1.2s infinite; }
+.steam i:nth-child(2) { animation-delay: .4s; }.steam i:nth-child(3) { animation-delay: .8s; }
+.is-cooking .steam { opacity: 1; }.station-blender .steam { display: none; }
+.is-cooking .food-inside { animation: kitchenStir .32s ease-in-out infinite alternate; }
+.station-blender.is-cooking .appliance-body { animation: kitchenBlend .09s linear infinite alternate; background: #f3b2c9; }
+.station-oven.is-cooking .appliance-body::before { background: #e9aa65; transition: background 1s; }
+.cook-progress { position: absolute; bottom: -7px; left: 20%; width: 0; height: 5px; background: #fbeb9c; border-radius: 5px; }
+.is-cooking .cook-progress { animation: kitchenProgress 3.2s linear forwards; }
+.is-loaded .appliance-face { animation: kitchenHeart 1s infinite; }
+.is-ready .food-inside { font-size: 42px; animation: kitchenHeart 1.3s infinite; }
+.is-ready .appliance { filter: drop-shadow(0 0 8px #fff0a3); }
+.is-eating .friend-face { animation: kitchenStir .2s ease-in-out infinite alternate; }
+.dish-eaten { animation: kitchenEat .8s ease-in forwards; }
+.kitchen-bounce { animation: kitchenPop .55s ease-in-out; }
+.recipe-bubble.kitchen-bounce { animation: kitchenHint .6s ease-in-out; }
+.lab-guide { grid-column: 1 / -1; padding: 12px; border-radius: 16px; background: #f7efff; color: #78528f; font-weight: 800; text-align: center; font-size: 14px; }
+.lab-guide small { display: block; margin-top: 7px; font-size: 12px; font-weight: normal; }
+.lab-display { grid-column: 1 / -1; height: 130px; display: flex; justify-content: center; align-items: center; border: 3px dashed #ead1b5; border-radius: 24px; background: radial-gradient(ellipse,#fffaf3,#f8e8da); font-size: 70px; }
+.lab-display .lab-art { width: 105px; height: 105px; animation: kitchenPop .6s; }
+.lab-item { padding: 8px; border-radius: 18px; border: 2px solid #f0dfeb; background: #fffafc; text-align: center; min-width: 0; }
+.lab-preview { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 5px; border: 0; background: transparent; color: #725c7a; cursor: pointer; padding: 0; }
+.lab-preview b { font-size: 12px; }.lab-preview small { font-size: 11px; }
+.lab-art { display: inline-flex; position: relative; align-items: center; justify-content: center; width: 66px; height: 66px; border-radius: 50%; }
+.lab-art img { width: 85%; height: 85%; }.lab-art i { position: absolute; right: -1px; top: -4px; font-size: 24px; font-style: normal; }
+.lab-art.rank-2 { background: linear-gradient(140deg,#dffaf5,#e9d9ff); box-shadow: 0 0 0 3px #c4b0ef; }
+.lab-art.rank-3 { background: conic-gradient(#fff0b5,#f6bfd6,#c8e4ff,#fff0b5); box-shadow: 0 0 0 4px #efd080,0 0 18px #f7df98; }
+.lab-merge { min-height: 44px; width: 100%; padding: 5px 2px; margin-top: 8px; border: 0; border-radius: 12px; background: #9373cf; color: white; cursor: pointer; font-size: 12px; font-weight: 800; }
+.lab-merge:disabled { background: #eee7f0; color: #9d8fa4; cursor: default; }.lab-max { display: block; padding: 15px 0; font-size: 12px; color: #b48738; }
+.just-merged { animation: kitchenPop .8s ease-out; border-color: #dcba5b; }
+@keyframes kitchenPop { 0%,100% { scale: 1; } 35% { scale: 1.12 .88; rotate: -5deg; } 65% { scale: .95 1.06; rotate: 4deg; } }
+@keyframes kitchenHint { 0%,100% { transform: translateX(-50%); } 50% { transform: translateX(-50%) translateY(-10px); } }
+@keyframes kitchenParticle { to { transform: translate(var(--dx),var(--dy)) rotate(var(--spin)); opacity: 0; } }
+@keyframes kitchenStir { to { transform: translateY(-6px) rotate(12deg); } }
+@keyframes kitchenBlend { to { transform: translateX(2px) rotate(1deg); } }
+@keyframes kitchenSteam { from { transform: translateY(0) scale(.5); opacity: 0; } 40% { opacity: 1; } to { transform: translateY(-36px) scale(1.2); opacity: 0; } }
+@keyframes kitchenProgress { to { width: 60%; } }
+@keyframes kitchenEat { to { transform: translate(-80px,-40px) scale(.1); opacity: 0; } }
+@keyframes kitchenHeart { 50% { transform: translateY(-4px) scale(1.08); } }
+@keyframes kitchenWater { to { background-position: 0 14px; } }
+@keyframes kitchenCloud { to { transform: translateX(30px); } }
+@keyframes kitchenSun { 50% { transform: rotate(35deg); } }
+@media (max-width: 600px) {
+  .playground-card.kitchen-active { padding: 8px; border-radius: 22px; }
+  .kitchen-room { height: 570px; border-width: 3px; border-radius: 20px; }
+  .kitchen-window { left: 5%; top: 18px; width: 108px; height: 105px; border-width: 7px; }
+  .kitchen-tools { left: 43%; top: 65px; gap: 9px; }.hanging-tool { width: 37px; height: 54px; font-size: 29px; padding: 2px; }
+  .kitchen-bunting { font-size: 35px; letter-spacing: 4px; left: 39%; top: -5px; }
+  .kitchen-counter { top: 160px; gap: 10px; padding: 0 12px 20px; grid-template-columns: .65fr 1fr 1fr .85fr; height: 170px; }
+  .recipe-bubble { font-size: 20px; min-width: 66px; gap: 1px; padding: 4px; top: -10px; }.recipe-bubble i { font-size: 10px; }
+  .cook-station { height: 140px; }.appliance { height: 119px; }.appliance-body { border-width: 3px; inset: 42px 5% 5px; }
+  .station-pot .appliance-body::before,.station-pot .appliance-body::after { border-width: 4px; width: 11px; height: 14px; left: -14px; }.station-pot .appliance-body::after { left: auto; right: -14px; }
+  .station-oven .appliance-body { inset: 30px 0 0; border-width: 3px; }.station-oven .appliance-body::before { inset: 23px 4px 11px; border-width: 3px; }
+  .station-blender .appliance-body { inset: 25px 14% 22px; border-width: 3px; }.station-blender .appliance-body::after { width: 12px; right: -14px; border-width: 3px; }
+  .food-inside { top: 53px; left: 7%; right: 7%; font-size: 21px; letter-spacing: -7px; }.is-ready .food-inside { font-size: 31px; }
+  .sink-tap { font-size: 39px; inset: 12px 0 auto; width: 100%; }.kitchen-sink { height: 106px; }.sink-food { font-size: 25px; left: 15%; }.water-stream { top: 45px; }
+  .kitchen-cabinets { top: 330px; }.kitchen-serving { top: 368px; height: 112px; padding: 0 8px 8px; gap: 6px; }
+  .kitchen-friend { flex-basis: 60px; height: 106px; }.friend-face { font-size: 50px; left: 0; }.friend-hat { font-size: 29px; top: 2px; left: 14px; }.friend-heart { top: 27px; font-size: 19px; }
+  .serving-plates { gap: 3px; }.served-dish { width: 51px; height: 52px; font-size: 34px; }.kitchen-prizes { width: 48px; }.kitchen-prizes img { width: 24px; height: 24px; }
+  .food-shelf { gap: 5px; padding: 8px; height: 86px; }.kitchen-food { height: 58px; min-width: 0; padding: 2px; border-radius: 14px; border-width: 2px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kitchen-room *, .lab-art, .lab-item { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .is-cooking .cook-progress { width: 60%; }
+}
+@media (max-width: 370px) {
+  .kitchen-prizes { width: 26px; }
+  .served-dish { width: 44px; font-size: 30px; }
+  .serving-plates { gap: 0; }
+  .kitchen-tools { gap: 2px; }
+}
+@media (max-height: 740px) and (orientation: portrait) {
+  .kitchen-room { height: 500px; }
+  .kitchen-window { height: 75px; width: 95px; top: 10px; }
+  .kitchen-window span { top: 0; font-size: 31px; }
+  .kitchen-tools { top: 38px; }
+  .kitchen-topbar { top: 6px; right: 6px; }
+  .kitchen-counter { top: 119px; }
+  .kitchen-cabinets { top: 289px; }
+  .kitchen-serving { top: 312px; height: 104px; }
+}

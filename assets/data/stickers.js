@@ -1,0 +1,32 @@
+// ORIGINAL_ASSET 数据：幼儿厨房与食物贴纸清单。
+// 每个资源均为项目内手写 SVG，透明背景，无外部图片或第三方版权素材。
+window.STICKERS = [
+  { id: 'cake', name: '草莓蛋糕', category: 'dessert', asset: 'assets/stickers/cake.svg', rarity: 'rare' },
+  { id: 'strawberry', name: '笑脸草莓', category: 'fruit', asset: 'assets/stickers/strawberry.svg', rarity: 'common' },
+  { id: 'ice-cream', name: '彩虹冰淇淋', category: 'dessert', asset: 'assets/stickers/ice-cream.svg', rarity: 'rare' },
+  { id: 'donut', name: '糖霜甜甜圈', category: 'dessert', asset: 'assets/stickers/donut.svg', rarity: 'rare' },
+  { id: 'cookie', name: '巧克力豆饼干', category: 'dessert', asset: 'assets/stickers/cookie.svg', rarity: 'common' },
+  { id: 'milk', name: '牛奶盒', category: 'drink', asset: 'assets/stickers/milk.svg', rarity: 'common' },
+  { id: 'juice', name: '橙汁杯', category: 'drink', asset: 'assets/stickers/juice.svg', rarity: 'common' },
+  { id: 'bread', name: '松软面包', category: 'staple', asset: 'assets/stickers/bread.svg', rarity: 'common' },
+  { id: 'pizza', name: '快乐披萨', category: 'savory', asset: 'assets/stickers/pizza.svg', rarity: 'rare' },
+  { id: 'onigiri', name: '三角饭团', category: 'staple', asset: 'assets/stickers/onigiri.svg', rarity: 'common' },
+  { id: 'fried-egg', name: '太阳煎蛋', category: 'savory', asset: 'assets/stickers/fried-egg.svg', rarity: 'common' },
+  { id: 'carrot', name: '眨眼胡萝卜', category: 'vegetable', asset: 'assets/stickers/carrot.svg', rarity: 'common' },
+  { id: 'tomato', name: '红红番茄', category: 'vegetable', asset: 'assets/stickers/tomato.svg', rarity: 'common' },
+  { id: 'corn', name: '开心玉米', category: 'vegetable', asset: 'assets/stickers/corn.svg', rarity: 'common' },
+  { id: 'pot', name: '咕嘟小锅', category: 'cookware', asset: 'assets/stickers/pot.svg', rarity: 'rare' },
+  { id: 'teapot', name: '彩虹茶壶', category: 'cookware', asset: 'assets/stickers/teapot.svg', rarity: 'rare' },
+  { id: 'cup', name: '彩虹小杯子', category: 'tableware', asset: 'assets/stickers/cup.svg', rarity: 'common' },
+  { id: 'spoon', name: '小勺子', category: 'tableware', asset: 'assets/stickers/spoon.svg', rarity: 'common' },
+  { id: 'fork', name: '小叉子', category: 'tableware', asset: 'assets/stickers/fork.svg', rarity: 'common' },
+  { id: 'knife', name: '彩色餐刀', category: 'tableware', asset: 'assets/stickers/knife.svg', rarity: 'common' },
+  { id: 'plate', name: '彩虹餐盘', category: 'tableware', asset: 'assets/stickers/plate.svg', rarity: 'common' },
+  { id: 'rolling-pin', name: '彩色擀面杖', category: 'kitchen-tool', asset: 'assets/stickers/rolling-pin.svg', rarity: 'rare' },
+  { id: 'whisk', name: '小小打蛋器', category: 'kitchen-tool', asset: 'assets/stickers/whisk.svg', rarity: 'rare' },
+  { id: 'chef-hat', name: '小厨师帽', category: 'kitchen-wear', asset: 'assets/stickers/chef-hat.svg', rarity: 'special' },
+  { id: 'cupcake', name: '小纸杯蛋糕', category: 'dessert', asset: 'assets/stickers/cupcake.svg', rarity: 'rare' },
+  { id: 'popsicle', name: '彩虹冰棒', category: 'dessert', asset: 'assets/stickers/popsicle.svg', rarity: 'rare' },
+  { id: 'bento', name: '缤纷便当盒', category: 'staple', asset: 'assets/stickers/bento.svg', rarity: 'special' },
+  { id: 'jam-jar', name: '草莓果酱', category: 'condiment', asset: 'assets/stickers/jam-jar.svg', rarity: 'rare' }
+];

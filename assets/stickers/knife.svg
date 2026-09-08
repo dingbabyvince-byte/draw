@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩色餐刀 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#cde8ef" d="M25 21q20-4 33 13l-1 20H25z"/><path fill="#ff91b4" d="M57 54l31 41q5 8-2 12-7 3-11-5L51 61z"/>
+    <circle fill="#fff" stroke="none" cx="38" cy="37" r="3"/><circle fill="#fff" stroke="none" cx="49" cy="37" r="3"/><path fill="none" d="M39 46q5 4 10 0"/>
+  </g>
+</svg>

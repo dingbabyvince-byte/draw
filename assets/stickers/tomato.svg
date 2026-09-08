@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 红红番茄 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#f05e63" d="M22 59q0-30 38-30t38 30q0 43-38 43T22 59z"/><path fill="#70c983" d="M60 37q-7-17-22-10 7-15 22-4 15-11 22 4-15-7-22 10z"/>
+    <circle fill="#fff" stroke="none" cx="48" cy="63" r="3"/><circle fill="#fff" stroke="none" cx="72" cy="63" r="3"/><path fill="none" d="M53 74q7 6 14 0"/>
+  </g>
+</svg>

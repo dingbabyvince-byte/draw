@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 50" width="140" height="50">
+  <!-- ORIGINAL_ASSET: 粉色小皮鞋（芭蕾风） -->
+  <ellipse cx="40" cy="32" rx="31" ry="16" fill="#ff6f9c" stroke="#d8336a" stroke-width="3"/>
+  <ellipse cx="100" cy="32" rx="31" ry="16" fill="#ff6f9c" stroke="#d8336a" stroke-width="3"/>
+  <path d="M28 22 Q40 12 52 22" fill="none" stroke="#ffd45a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M88 22 Q100 12 112 22" fill="none" stroke="#ffd45a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="40" cy="34" r="3" fill="#ffd45a"/><circle cx="100" cy="34" r="3" fill="#ffd45a"/>
+</svg>

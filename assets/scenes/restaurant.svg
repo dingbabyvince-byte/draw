@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ORIGINAL_ASSET: 餐厅场景 -->
+  <rect width="800" height="500" fill="#fff3e0"/>
+  <rect y="360" width="800" height="140" fill="#d7ccc8"/>
+  <rect x="80" y="200" width="200" height="160" rx="12" fill="#ffe0b2" stroke="#e0a86a" stroke-width="4"/>
+  <rect x="520" y="180" width="200" height="180" rx="12" fill="#ffccbc" stroke="#e8957a" stroke-width="4"/>
+  <rect x="300" y="240" width="200" height="120" rx="10" fill="#fff" stroke="#cfd8dc" stroke-width="4"/>
+  <circle cx="400" cy="280" r="28" fill="#ff7043"/><rect x="360" y="300" width="80" height="10" fill="#8d6e63"/>
+  <rect x="0" y="0" width="800" height="60" fill="#ffab91"/>
+</svg>

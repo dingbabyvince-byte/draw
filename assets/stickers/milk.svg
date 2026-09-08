@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 牛奶盒 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#fff8e8" d="M32 28h55l-5 77H37z"/><path fill="#ff9bbb" d="M32 28l13-15 42 15-5 18H32z"/><path fill="#fff" d="M40 63h42v25H40z"/>
+    <path fill="#7fc9ed" d="M43 70q10-12 20 0 10-12 19 0v18H43z"/><circle fill="#70445e" stroke="none" cx="49" cy="55" r="3"/><circle fill="#70445e" stroke="none" cx="72" cy="55" r="3"/><path fill="none" d="M54 62q6 5 12 0"/>
+  </g>
+</svg>

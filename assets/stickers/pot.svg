@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 咕嘟小锅 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#7fc8e8" d="M20 47h80v39q-6 20-40 20T20 86z"/><path fill="#b7e7f7" d="M15 45q45-20 90 0v12H15z"/><path fill="#8c79d8" d="M48 29h24v14H48z"/><path fill="none" d="M20 68H10m100 0h-10"/>
+    <circle fill="#fff" stroke="none" cx="47" cy="73" r="3"/><circle fill="#fff" stroke="none" cx="73" cy="73" r="3"/><path fill="none" d="M53 83q7 6 14 0"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 140" width="70" height="140">
+  <!-- ORIGINAL_ASSET: 魔法棒 -->
+  <rect x="30" y="40" width="10" height="90" rx="5" fill="#c9a0ff" stroke="#8a5cd6" stroke-width="3"/>
+  <path d="M35 8 L40 26 L58 28 L44 38 L48 56 L35 46 L22 56 L26 38 L12 28 L30 26 Z" fill="#ffd45a" stroke="#e8a900" stroke-width="3"/>
+</svg>

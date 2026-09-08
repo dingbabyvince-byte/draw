@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 彩虹餐盘 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse fill="#fff5dc" cx="60" cy="65" rx="48" ry="29"/><ellipse fill="#a7dff0" cx="60" cy="65" rx="33" ry="18"/><path fill="#ff9b61" d="M46 64q14-12 28 0-14 13-28 0z"/>
+    <circle fill="#fff" stroke="none" cx="53" cy="63" r="3"/><circle fill="#fff" stroke="none" cx="67" cy="63" r="3"/><path fill="none" d="M55 71q5 4 10 0"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- ORIGINAL_ASSET: 小厨师帽 -->
+  <g stroke="#70445e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#fff" d="M28 82V50q0-18 16-18 5-18 18-18t18 18q16 0 16 18v32z"/><path fill="#ff91b4" d="M28 79h68v22H28z"/><circle fill="#fff" stroke="none" cx="49" cy="58" r="3"/><circle fill="#fff" stroke="none" cx="71" cy="58" r="3"/><path fill="none" d="M54 68q6 5 12 0"/>
+  </g>
+</svg>
